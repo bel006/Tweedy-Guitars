@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Tweedy Guitars</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <script src="js/scripts.js"></script>
+
+    <div class="header">
+        <div>
+            <img src="images/guitars.jpg" class="bg-image" alt="Guitars" />
+        </div>
+
+        <div class="bg-text">
+            <h1 class="page-title">Tweedy Guitars</h1>
+            <p class="custom">Custom Guitars & Other Stringed Instruments</p>
+
+            <div class="navbar">
+                <a class="active" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">NEW Instruments</button>
+                    <div class="dropdown-content">
+                        <a href="spruce-rosewood.html">Red Spruce/Rosewood 00</a>
+                        <a href="spruce-mahogany.html">Spruce/Mahogany Jumbo - 12</a>
+                        <a href="maple-fir.htl">Fir/Maple OM</a>
+                    </div>
+                </div>
+                <a class="active" href="collection.html">
+                    Collection
+                </a>
+                <div class="dropdown">
+                    <button class="dropbtn">Resources</button>
+                    <div class="dropdown-content">
+                        <a href="http://www.mimf.com/phpbb/">
+                            Musical Maker's Instrument Forum
+                        </a>
+                        <a href="http://www.youtube.com/watch?v=BBXFpcoJBJo">
+                            Black Walnut Rescue
+                        </a>
+                        <a href="http://luth.org/">Guild of American Luthiers</a>
+                        <a href="http://www.frets.com/">
+                            The AMAZING Frets.com by Frand Ford
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="body">
+            <h3>OM Maple / Fir</h3>
+
+            <p>This guitar now lives at the amazing <a href="http://www.sbguitarbar.com/">Santa Barbara Guitar Bar</a>.</p>
+
+            <ul>
+                <li><img src="images/tau15.png"> Top: Sub-Alpine Fir</li>
+                <li><img src="images/tau15.png"> Back/Sides: Silver Maple</li>
+                <li><img src="images/tau15.png"> FB: Ebony</li>
+                <li><img src="images/tau15.png"> Bridge: Ebony</li>
+                <li><img src="images/tau15.png"> Neck: Linden</li>
+                <li><img src="images/tau15.png"> Binding: Ebony</li>
+            </ul>
+            <p>There's one thing that everyone who's witnessed this guitar says: "Wow! This thing is LOUD!!"</p>
+            <p>The top is an unusual species: <a href="https://www.conifers.org/pi/Abies_lasiocarpa.php">sub-alpine fir</a> and it works great. Can't argue with success.</p>
+            <p>Price: SEE <a href="http://www.sbguitarbar.com/">SB Guitar Bar</a> -or- <a href="mailto:l.betsy@ymail.com">EMAIL</a> me to inquire about details.</p>
+        </div>
+
+        <br>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="images/OM_front1.jpg" style="width:50%">
+                <div class="text">OM size and scale on an instrument that follows a strict black-and-white theme.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/OM_top2.jpg" style="width:50%">
+                <div class="text">Ebony bridge with a long saddle and white pegs. The maple of the sides <br> is subtly figured, showing shimmers of fire in every highlight.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/OM_back3.jpg" style="width:50%">
+                <div class="text">The thematic black line flows all the way up the guitar from the tail, <br> through the heel, past the point of the diamon headstock joint, <br> and over the top of the headstock.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/OM_backSide4.jpg" style="width:50%">
+                <div class="text">The back's dramatic figure.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/OM_head5.jpg" style="width:50%">
+                <div class="text">Simple, classy black headstock.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/OM_headBack6.jpg" style="width:50%">
+                <div class="text">Grover open-back tuners atop the diamond volute.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/OM_label7.jpg" style="width:50%">
+                <div class="text">The new Tweedy Guitars label. Freshly minted.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/OM_case8.jpg" style="width:50%">
+                <div class="text">The guitar comes with a TKL black hardshell case.</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <br>
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://www.facebook.com/chuck.tweedy.52"><img src="images/facebook.png"
+                            alt="Facebook" /></a>
+                    <a href="https://www.youtube.com/channel/UCoZaa5rmLevDyj7v10azAbw"><img src="images/youtube.png"
+                            alt="YouTube" /></a>
+                    <a href="mailto:l.betsy@ymail.com"><img src="images/mail.png" alt="Mail" /></a>
+                </div>
+            </div>
+        </div>
+
+        <br></br>
+        2020 Midnight Lutherie LLC
+
+    </footer>
+
+</body>
+
+</html>

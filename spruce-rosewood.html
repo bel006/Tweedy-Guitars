@@ -1,0 +1,256 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Tweedy Guitars</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <script src="js/scripts.js"></script>
+
+    <div class="header">
+        <div>
+            <img src="images/guitars.jpg" class="bg-image" alt="Guitars" />
+        </div>
+
+        <div class="bg-text">
+            <h1 class="page-title">Tweedy Guitars</h1>
+            <p class="custom">Custom Guitars & Other Stringed Instruments</p>
+
+            <div class="navbar">
+                <a class="active" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">NEW Instruments</button>
+                    <div class="dropdown-content">
+                        <a href="spruce-rosewood.html">Red Spruce/Rosewood 00</a>
+                        <a href="spruce-mahogany.html">Spruce/Mahogany Jumbo - 12</a>
+                        <a href="maple-fir.html">Fir/Maple OM</a>
+                    </div>
+                </div>
+                <a class="active" href="collection.html">
+                    Collection
+                </a>
+                <div class="dropdown">
+                    <button class="dropbtn">Resources</button>
+                    <div class="dropdown-content">
+                        <a href="http://www.mimf.com/phpbb/">
+                            Musical Maker's Instrument Forum
+                        </a>
+                        <a href="http://www.youtube.com/watch?v=BBXFpcoJBJo">
+                            Black Walnut Rescue
+                        </a>
+                        <a href="http://luth.org/">Guild of American Luthiers</a>
+                        <a href="http://www.frets.com/">
+                            The AMAZING Frets.com by Frand Ford
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="body">
+            <h3>00-size Rosewood Guitar</h3>
+            <p>This guitar now lives at the amazing <a href="http://www.sbguitarbar.com/">Santa Barbara Guitar Bar</a>.
+            </p>
+            <ul>
+                <li><img src="images/tau15.png"> Top: Red Spruce</li>
+                <li><img src="images/tau15.png"> Back/Sides: Honduras Rosewood</li>
+                <li><img src="images/tau15.png"> FB: Ebony</li>
+                <li><img src="images/tau15.png"> Bridge: Honduras Rosewood</li>
+                <li><img src="images/tau15.png"> Neck: Honduras Mahogany</li>
+                <li><img src="images/tau15.png"> Binding: Flame Maple</li>
+            </ul>
+            <p>This is a fingerstyle, dream guitar. Exceptionally sensitive and responsive with the vintage tone that
+                you would expect from a red spruce top and a fine rosewood body.</p>
+            <p>The top is from a very old, very fine red (Adirondack) spruce mandolin top set originally harvested by
+                NorthWoods Tonewoods of Maine. Because it was sized for a mandolin, this top is constructed from four
+                pieces. Similarly, the back is three
+                pieces of the finest Honduras rosewood I've ever seen.</p>
+            <p>These highly sought after woods are extremely rare these days, but with a little extra work, an
+                instrument can still be made from the finest tonewoods.</p>
+            <p>Price: See <a href="http://www.sbguitarbar.com/">SBGuitarBar</a> -or- <a
+                    href="mailto:l.betsy@ymail.com">EMAIL</a> me to inquire about details.</p>
+        </div>
+
+        <br>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="images/HR_front1.jpg" style="width:50%">
+                <div class="text">Top of the guitar showing the pyramid bridge, <br> the shell soundhole ring, and the
+                    tortoloid pickguard.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/HR_back2.jpg" style="width:50%">
+                <div class="text">Ink lines on chocolate. It could pass as Brazilian <br> rosewood in look and sound - but
+                    it's BETTER! It is Honduras Rosewood!</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/HR_head3.jpg" style="width:50%">
+                <div class="text">Signature Tau on a simple keystone headstock.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/HR_headBack4.jpg" style="width:50%">
+                <div class="text">Vintage diamond volute -- find more about my <br> headstock joint from the home page.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/HR_case5.jpg" style="width:50%">
+                <div class="text">Guitar comes with a TKL arch-top hardshell case; <br> tweed of course -- my favorite case.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/HR_inMold6.jpg" style="width:50%">
+                <div class="text">Under construction: the inside of the back, showing the pair of reinforcement <br> strips for the 3-piece back, and the beautiful figure of the wood shining all the way through.</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://www.facebook.com/chuck.tweedy.52"><img src="images/facebook.png"
+                            alt="Facebook" /></a>
+                    <a href="https://www.youtube.com/channel/UCoZaa5rmLevDyj7v10azAbw"><img src="images/youtube.png"
+                            alt="YouTube" /></a>
+                    <a href="mailto:l.betsy@ymail.com"><img src="images/mail.png" alt="Mail" /></a>
+                </div>
+            </div>
+        </div>
+
+        <br></br>
+        2020 Midnight Lutherie LLC
+
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+
+<!-- <div id="carouselSpruceRosewood" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselSpruceRosewood" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselSpruceRosewood" data-slide-to="1"></li>
+        <li data-target="#carouselSpruceRosewood" data-slide-to="2"></li>
+        <li data-target="#carouselSpruceRosewood" data-slide-to="3"></li>
+        <li data-target="#carouselSpruceRosewood" data-slide-to="4"></li>
+        <li data-target="#carouselSpruceRosewood" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="images/HR_front1.jpg" alt="Spruce Rosewood Front">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="caption">Top of the guitar showing the pyramid bridge, the shell soundhole ring, and
+                    the tortoloid pickguard.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/HR_back2.jpg" alt="Spruce Rosewood Back">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="caption">Ink lines on chocolate. It could pass as Brazilian rosewood in look and sound
+                    - but it's BETTER! It is Honduras Rosewood!</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/HR_head3.jpg" alt="Spruce Rosewood Head">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="caption">Signature Tau on a simple keystone headstock.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/HR_headBack4.jpg" alt="Spruce Rosewood Head Back">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="caption">Vintage diamond volute -- find more about my headstock joint from the home
+                    page.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/HR_case5.jpg" alt="Spruce Rosewood Case">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="caption">Guitar comes with a TKL arch-top hardshell case; tweed of course -- my
+                    favorite case.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="images/HR_inMold6.jpg" alt="Spruce Rosewood Mold">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="caption">Under construction: the inside of the back, showing the pair of reinforcement
+                    strips for the 3-piece back, and the beautiful figure of the wood shining all the way
+                    through.</p>
+            </div>
+        </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselSpruceRosewood" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselSpruceRosewood" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselSpruceRosewood" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div> -->

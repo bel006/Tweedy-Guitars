@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+
+    <title>Tweedy Guitars</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <script src="js/scripts.js"></script>
+
+    <div class="header">
+        <div>
+            <img src="images/guitars.jpg" class="bg-image" alt="Guitars" />
+        </div>
+
+        <div class="bg-text">
+            <h1 class="page-title">Tweedy Guitars</h1>
+            <p class="custom">Custom Guitars & Other Stringed Instruments</p>
+
+            <div class="navbar">
+                <a class="active" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">NEW Instruments</button>
+                    <div class="dropdown-content">
+                        <a href="spruce-rosewood.html">Red Spruce/Rosewood 00</a>
+                        <a href="spruce-mahogany.html">Spruce/Mahogany Jumbo - 12</a>
+                        <a href="maple-fir.html">Fir/Maple OM</a>
+                    </div>
+                </div>
+                <a class="active" href="collection.html">Collection</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Resources</button>
+                    <div class="dropdown-content">
+                        <a href="http://www.mimf.com/phpbb/">
+                            Musical Maker's Instrument Forum
+                        </a>
+                        <a href="http://www.youtube.com/watch?v=BBXFpcoJBJo">
+                            Black Walnut Rescue
+                        </a>
+                        <a href="http://luth.org/">Guild of American Luthiers</a>
+                        <a href="http://www.frets.com/">
+                            The AMAZING Frets.com by Frand Ford
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="body">
+            <h3>Past Work Pictures</h3>
+            <p>Images on this page link to my Google+ image galleries where you can browse hundreds of pictures.</p>
+            <p>Feel free to post and/or follow me on Google+ page, it will get a lot more updates than this website.</p>
+        </div>
+
+        <br>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">An 8-string tenor ukulele that has several custom features. First, there <br> is the side soundpot which helps direct more sound to the player, and second, the <br> instrument has some very nice pickups. Over 100 pictures in the archive. From plans to completion.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">A Cittern shaped guitar built custom for someone who wanted a "medieval" looking <br> instrument that played like a guitar. This extensive set of photos is the kind of documentation <br> you can expect if you commission a custom instrument from me. This was a very fun instrument to build.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">This is where it all started for me. Old #0 is my first guitar, built strictkly to the <br> instructions of the iconic text "Guitarmaking" by Cumpiano and Natelson. I've significantly updated <br> my techniques since this time, but continue to build with mostly hand tools as this guitar was. A 1-size parlor guitar.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">My first commission. Built for a friend who believed in my abilities as a luthier. <br> Another 1-size in some amazing koa.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">One of the most challenging and successful instruments I've ever built is this flamenco <br> guitar following a Santo Hernandez plantilla. The Carpathian spruce to and satinwood body produce <br> a Flamenco punch while looking amazing at the same time.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">A traditional 000 with EIR back and side, except it has a 13-fret neck. <br> Oh, and a raised fingerboard.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">A couple ukes. One built with the materials of a classical guitar, <br> the other curly maple.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">I currently offer options for a raised fingerboard <br> and player-side sound ports.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="" style="width:50%">
+                <div class="text">An early instrument in satinwood. <br> My first extensive inlay work.</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+            <span class="dot" onclick="currentSlide(8)"></span>
+            <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+        <br>
+
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <div class="row">
+                <div class="col-sm">
+                    <a href="https://www.facebook.com/chuck.tweedy.52"><img src="images/facebook.png"
+                            alt="Facebook" /></a>
+                    <a href="https://www.youtube.com/channel/UCoZaa5rmLevDyj7v10azAbw"><img src="images/youtube.png"
+                            alt="YouTube" /></a>
+                    <a href="mailto:l.betsy@ymail.com"><img src="images/mail.png" alt="Mail" /></a>
+                </div>
+            </div>
+        </div>
+
+        <br></br>
+        2020 Midnight Lutherie LLC
+
+    </footer>
+
+</body>
+
+</html>
