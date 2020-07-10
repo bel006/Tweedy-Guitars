@@ -30,7 +30,7 @@
   border: 2px solid #ece1cf;
   position: absolute;
   top: 15%;
-  margin-top: 50px;
+  margin-top: 45px;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
@@ -131,8 +131,11 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 
+.header {
+  margin-top: -8px;
+}
+
 body {
-  overflow-x: hidden;
   overflow-y: scroll;
 }
 
@@ -262,6 +265,10 @@ img {
   .text {
     font-size: 11px;
   }
+
+  body {
+    overflow-y: scroll;
+  }
 }
 
 /* Responsive Web Design for Small Screens */
@@ -269,6 +276,11 @@ img {
 @media only screen and (max-width: 600px) {
   .body {
     font-size: 16px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   .navbar a {
